@@ -1,0 +1,98 @@
+<svg viewBox="0 0 1200 360" width="1200" height="360" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1a2b"/>
+      <stop offset="55%" stop-color="#102a43"/>
+      <stop offset="100%" stop-color="#0c1f33"/>
+    </linearGradient>
+    <linearGradient id="barBlue" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#1f6fb2" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#4fb8e8" stop-opacity="0.95"/>
+    </linearGradient>
+    <linearGradient id="barOrange" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#c9531f" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#f3a15c" stop-opacity="0.95"/>
+    </linearGradient>
+    <linearGradient id="barTeal" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#0f6b63" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#4fd8c4" stop-opacity="0.9"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f3a15c" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#f3a15c" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="headGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#bfe3ff"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="1200" height="360" fill="url(#bg)"/>
+
+  <circle cx="1020" cy="90" r="180" fill="url(#glow)"/>
+
+  <!-- subtle grid -->
+  <g stroke="#3a5b7a" stroke-width="1" opacity="0.18">
+    <line x1="0" y1="60" x2="1200" y2="60"/>
+    <line x1="0" y1="120" x2="1200" y2="120"/>
+    <line x1="0" y1="180" x2="1200" y2="180"/>
+    <line x1="0" y1="240" x2="1200" y2="240"/>
+    <line x1="0" y1="300" x2="1200" y2="300"/>
+    <line x1="200" y1="0" x2="200" y2="360"/>
+    <line x1="400" y1="0" x2="400" y2="360"/>
+    <line x1="600" y1="0" x2="600" y2="360"/>
+    <line x1="800" y1="0" x2="800" y2="360"/>
+    <line x1="1000" y1="0" x2="1000" y2="360"/>
+  </g>
+
+  <!-- dashboard panel on right -->
+  <g>
+    <rect x="850" y="140" width="290" height="170" rx="10" fill="#0d223a" stroke="#2c5a80" stroke-width="1.5" opacity="0.85"/>
+    <!-- bar chart -->
+    <rect x="875" y="240" width="24" height="55" fill="url(#barBlue)" rx="2"/>
+    <rect x="910" y="210" width="24" height="85" fill="url(#barOrange)" rx="2"/>
+    <rect x="945" y="255" width="24" height="40" fill="url(#barTeal)" rx="2"/>
+    <rect x="980" y="190" width="24" height="105" fill="url(#barBlue)" rx="2"/>
+    <rect x="1015" y="225" width="24" height="70" fill="url(#barOrange)" rx="2"/>
+    <rect x="1050" y="205" width="24" height="90" fill="url(#barTeal)" rx="2"/>
+    <!-- line trend -->
+    <polyline points="875,230 910,195 945,240 980,170 1015,205 1050,180 1074,200"
+      fill="none" stroke="#f3a15c" stroke-width="2.5" opacity="0.9"/>
+    <circle cx="1074" cy="200" r="4" fill="#f3a15c"/>
+    <!-- header dots -->
+    <circle cx="868" cy="158" r="4" fill="#e0673b"/>
+    <circle cx="884" cy="158" r="4" fill="#f3a15c"/>
+    <circle cx="900" cy="158" r="4" fill="#4fd8c4"/>
+    <line x1="850" y1="172" x2="1140" y2="172" stroke="#2c5a80" stroke-width="1"/>
+  </g>
+
+  <!-- floating pie/donut motif -->
+  <g transform="translate(1000,90)" opacity="0.9">
+    <circle r="34" fill="none" stroke="#274a63" stroke-width="12"/>
+    <circle r="34" fill="none" stroke="#4fb8e8" stroke-width="12" stroke-dasharray="90 200" stroke-dashoffset="0" transform="rotate(-90)"/>
+    <circle r="34" fill="none" stroke="#f3a15c" stroke-width="12" stroke-dasharray="60 200" stroke-dashoffset="-90" transform="rotate(-90)"/>
+  </g>
+
+  <!-- decorative lock/key icon suggesting activation -->
+  <g transform="translate(95,240)" opacity="0.85">
+    <rect x="0" y="18" width="46" height="34" rx="6" fill="#12314e" stroke="#4fb8e8" stroke-width="2"/>
+    <path d="M8 18 v-8 a15 15 0 0 1 30 0 v8" fill="none" stroke="#f3a15c" stroke-width="3"/>
+    <circle cx="23" cy="34" r="5" fill="#f3a15c"/>
+    <line x1="23" y1="39" x2="23" y2="46" stroke="#f3a15c" stroke-width="3"/>
+  </g>
+
+  <!-- headline -->
+  <text x="60" y="150" font-family="'Segoe UI', Arial, sans-serif" font-weight="700" font-size="60" fill="url(#headGrad)">
+    <tspan x="60" y="150" textLength="720" lengthAdjust="spacingAndGlyphs">Tableau Full Version</tspan>
+    <tspan x="60" y="220" textLength="380" lengthAdjust="spacingAndGlyphs">Download</tspan>
+  </text>
+
+  <!-- tagline -->
+  <text x="60" y="268" font-family="'Segoe UI', Arial, sans-serif" fill="#a9c7de" textLength="1080.0" lengthAdjust="spacingAndGlyphs" font-size="20.0">
+    Reads install configs, processes activation data, exports full Tableau setup — no setup
+  </text>
+
+  <!-- accent underline -->
+  <rect x="60" y="288" width="180" height="4" rx="2" fill="#f3a15c"/>
+  <rect x="248" y="288" width="60" height="4" rx="2" fill="#4fb8e8"/>
+</svg>
